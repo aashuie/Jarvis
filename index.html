@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JARVIS • Web AI Console</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="jarvis-bg"></div>
+
+<div class="jarvis-shell">
+  <header class="jarvis-header">
+    <div class="brand">
+      <span class="brand-main">JARVIS</span>
+      <span class="brand-sub">PERSONAL AI INTERFACE</span>
+    </div>
+    <div class="status">
+      <span class="dot"></span>
+      <span class="status-text">ONLINE • OWNER: AASHU</span>
+    </div>
+  </header>
+
+  <main class="jarvis-main">
+    <!-- Left: Core -->
+    <section class="core-section">
+      <div class="core-orbit">
+        <div class="core-ring core-ring-outer"></div>
+        <div class="core-ring core-ring-middle"></div>
+        <div class="core-center"></div>
+      </div>
+      <div class="core-info">
+        <div class="core-line">Hello, <span>Aashu</span>.</div>
+        <div class="core-sub">Ask me anything.</div>
+      </div>
+    </section>
+
+    <!-- Right: Chat / Q&A -->
+    <section class="chat-section">
+      <div class="chat-header">
+        <span>JARVIS RESPONSE FEED</span>
+        <span class="chat-mode">MODE: DEMO AI</span>
+      </div>
+
+      <div id="chatWindow" class="chat-window">
+        <!-- Messages injected by JS -->
+      </div>
+
+      <form id="chatForm" class="chat-input-area" autocomplete="off">
+        <div class="input-inner">
+          <span class="prompt">&gt;</span>
+          <input
+            id="userInput"
+            type="text"
+            placeholder="Type your question and press Enter..."
+          />
+        </div>
+        <button type="submit" class="send-btn">SEND</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="jarvis-footer">
+    <span>Designed for OLED • Made for <strong>Aashu</strong></span>
+    <span id="footerClock"></span>
+  </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
